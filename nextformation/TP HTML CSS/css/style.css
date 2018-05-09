@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+* {
+
+	padding: 0;
+	margin: 0;
+}
+
+body {
+
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+
+	width: 100%;
+	height: 600px;
+	background-image: url('../img/header.jpeg');
+	background-size: cover;
+}
+
+.logo {
+
+	position: absolute;
+	top: 30px;
+	left: 8%;
+	width : 250px;
+}
+
+h1 {
+
+	position: absolute;
+	top: 200px;
+	left: 10%;
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+
+
+h4 {
+
+	position: absolute;
+	top: 250px;
+	left: 10%;
+	font-size: 2em;
+}
+
+.banner {
+
+	position: absolute;
+	top: 330px;
+	left: 0%;
+	width : 45%;
+	height: 50px;
+	line-height: 50px;
+	color: white;
+	text-align: right;
+	padding-right: 15px;
+	background: #003c8c;
+
+}
+
+nav {
+
+	position: absolute;
+	bottom: 200px;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	background: rgba(00, 0, 0, 1);
+}
+
+a {
+
+	text-decoration: none;
+	color: white;
+
+	list-style: none;
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 1.2em;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	text-transform: uppercase;
+}
+
+nav ul li a:hover {
+
+
+	color: black;
+}
+
+nav ul li {
+
+	list-style: none;
+	display: inline-block;
+	
+}
+
+
+nav ul li:hover {
+
+	color: black;
+	background: white;
+}
+
+
+/* la zone main*/
+main {
+
+	width: 100%;
+}
+
+.sec1 {
+
+
+	position: relative;
+	width: 100%;
+	height: 600px;
+    padding-bottom: 20px;
+    background: #eee;
+
+}
+
+.sec1-title {
+
+	position: absolute;
+	left: 0%;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: white;
+	text-align: center;
+	background: #003c8c;
+}
+
+.sec1-text {
+
+
+	position: relative;
+	left: 10%;
+	top: 80px;
+	width: 25%;
+}
+
+
+.sec1-video {
+
+	position: absolute;
+	top: 90px;
+	right: 10%;
+    width: 48%;
+    border: solid 1px black;
+}
+
+
+/* section 2 */
+.sec2 {
+
+	position: relative;
+	width: 100;
+	height: 500px;
+	background: white;
+
+}
+
+.equi {
+
+	position: absolute;
+	left: 10%;
+	top: 100px;
+	width: 80%;
+}
+
+.sec2-img {
+
+	position: relative;
+	width: 20%;
+	margin-right: 6%;
+	display: inline-block;
+	width: 20%;
+	border: solid 1px black;
+}
+
+.sec2-img-fin {
+
+	position: relative;
+	display: inline-block;
+	width: 20%;
+	height: 254px;
+	border: solid 1px black;
+}
+
+
+
+
+.sect2-title {
+
+	position: absolute;
+	bottom: -70px;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	color: white;
+	text-align: center;
+	border: solid 1px black;
+	background: #003c8c;
+	cursor: pointer;
+
+}
+
+
+/* section 3 */
+.sec3 {
+
+	position: relative;
+	width: 100;
+	height: 600px;
+	background: #eee;
+
+}
+
+.g1 {
+
+
+	position: absolute;
+	top: 100px;
+	left: 10%;
+	width: 35%;
+
+}
+
+.g2 {
+
+
+	position: absolute;
+	top: 100px;
+	right: 10%;
+	width: 35%;
+
+}
+
+.g-img1 {
+
+	width: 100%;
+}
+
+/* section 4 */
+.sec4 {
+
+	position: relative;
+	width: 100;
+	height: 500px;
+
+}
+
+
+.v1 {
+
+
+	position: absolute;
+	top: 100px;
+	left: 10%;
+	width: 25%;
+	
+
+}
+
+.v2 {
+
+
+	position: absolute;
+	top: 100px;
+	left: 37.5%;
+	width: 25%;
+
+}
+
+.v3 {
+
+
+	position: absolute;
+	top: 100px;
+	left: 65%;
+	width: 25%;
+
+}
+
+
+/* section 5 */
+.sec5 {
+
+	position: relative;
+	width: 100;
+	height: 500px;
+
+}
+
+.cont1 {
+
+	position: absolute;
+	top: 100px;
+	left: 10%;
+	width: 25%;
+	height: 300px;
+}
+
+.ski {
+
+	font-size: 2em;
+}
+
+.adress > li {
+
+	list-style: none;
+	display: inline-block
+	color: black;
+	margin-bottom: 15px;
+}
+
+.fas {
+
+	color: #003c8c;
+	margin-right: 25px;
+}
+
+.cont2 {
+
+	position: absolute;
+	top: 100px;
+	left: 45%;
+	width: 45%;
+	height: 300px;
+	background: white;
+}
+
+iframe {
+
+	width: 100%;
+	height: 100%;
+}
+
+.social >li {
+
+	display: inline-block;
+}
+
+.social {
+
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+.soc {
+
+	width: 30px;
+	margin-right: 15px;
+}
+
+.uper {
+
+	position: fixed;
+	bottom: 70px;
+	right: 20px;
+}
+
+/**/
+footer {
+
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: black;
+}
+
+
+.far {
+
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
