@@ -17,6 +17,11 @@ var tableColumn = [7, 7, 7, 7, 7];
 var grilles = new Array();
 var grille = new Array();
 var colored ="#dac292";
+var comptage = false;
+var posLine;
+var posColonne;
+var initLine =0;
+var initColonne=0;
 //var mX,mY;
 
 
@@ -177,37 +182,107 @@ function lacherToken(tok, elem){
 			grille[elem][tableColumn[elem]] = gammer;
 			tableColumn[elem] -=1;
 
-			verif(elem, tableColumn[elem]);
+			verif();
+
+			//console.log(grille);
 
 			//player();
 		}
 	}
+//================================ verifcation =================================
+function verif () {
 
-function verif (cols, lns ) {
+				//verifPuissance (ln, cl)
+		var cptV = verifPuissance (1, 0);
+		var cptH = verifPuissance (0, 1);	
+		var cptHVP = verifPuissance (1, 1);
+		//console.log(cptH);
+		var cptHVM = verifPuissance (-1, 1);
+        // 
 
-			var mx = 0;
-			var my = 7;
-			var compteur = 0;
+		if( cptV >=4 || cptH >=4 || cptHVP >= 4 || cptHVM >=4) {
 
-			for (mx=0; mx<5; mx+=1){
-				for(my=7; my>0; my-=1){
-					
-						
-				}
-			}
+				alert('win :'+gammer);
+		}else {
 
-			console.log(grille);
-/*
-			if(compteur === 4){
+			//console.log("cptHVM = "+cptHVM);
+			player();
+		}
 
-				alert('gagner');
-			}else {
 
-				
-			}
-*/player();
 
 }
+
+
+
+
+	
+//=========================================  verif puissance 4 ==========
+function verifPuissance (ln, cl){
+
+	var ints;
+	var colonne;
+	var line ;
+	var i = 0;
+	var posC;
+	var compteur = 0;
+	
+	
+	
+		
+			for(line=0; line<8; line+=1){
+				for(colonne = 0; colonne <5; colonne +=1){
+					if((grille[colonne][line] === gammer) ){
+
+						initColonne = colonne;
+						initLine = line;
+						for(ints = 0; ints < 4; ints+=1){
+
+								if(grille[initColonne][initLine] === gammer ){
+									
+									initColonne +=cl;
+									initLine +=ln;
+									compteur +=1;
+
+									
+									
+									if( compteur >= 4){
+
+											ints = 5;
+											return compteur;
+										}
+
+									
+
+								}else {
+
+									compteur =0;
+								}
+
+								
+
+								if(initColonne > 4 || initLine>7 ){
+
+									compteur =0;
+									initColonne = 0;
+									initLine =0;
+									ints = 5;
+									
+								}
+						}
+
+					}
+				}
+
+			}
+		
+	
+}
+
+
+//============================== fin verification ===============================
+
+
 
 onmousemove = function(event) {
 						if(bouger === true){
